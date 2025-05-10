@@ -1,9 +1,9 @@
 function pow(mainNumber,stypin) {
-    var firstMainNumber = mainNumber;
+    var result = mainNumber;
     for (i = 1; i < stypin; i++){
-        mainNumber = (mainNumber * firstMainNumber);
+        result = (result * mainNumber);
     }
-    console.log( "Result is: " + mainNumber + ". This is result of " + firstMainNumber + " raised to " + stypin + ".");
+    console.log( "Result is: " + result + ". This is result of " + mainNumber + " raised to " + stypin + ".");
 }
 
-pow(3,4);
+pow(2,3);
