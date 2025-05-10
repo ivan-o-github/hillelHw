@@ -3,7 +3,7 @@ function pow(mainNumber,stypin) {
     for (i = 1; i < stypin; i++){
         mainNumber = (mainNumber * firstMainNumber);
     }
-    console.log(mainNumber);
+    console.log( "Result is: " + mainNumber + ". This is result of " + firstMainNumber + " raised to " + stypin + ".");
 }
 
 pow(3,4);
