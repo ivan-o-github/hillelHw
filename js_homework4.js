@@ -3,14 +3,14 @@ function random(min, max) {
 }
 
 function percentageCalc(total, number){
-    return (100 * number) / total;
+    return ((100 * number) / total).toFixed(2);
 }
 
-function checkProbabilityCount() {
+function checkProbabilityCount(kolNumber) {
     var numberAll = 0
     var countNeparni = 0
     var countParni = 0
-    for(i = 0; i < 10; i++) {
+    for(let i = 0; i < kolNumber; i++) {
         if (random(100,1000) % 2){
             countNeparni++
             numberAll++
@@ -30,4 +30,4 @@ function checkProbabilityCount() {
     console.log("відсоток парних " + percentageCalc(numberAll, countParni) + "% до непарних " + percentageCalc(numberAll, countNeparni) + "%")
 }
 
-checkProbabilityCount();
+checkProbabilityCount(6);
